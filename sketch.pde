@@ -5,13 +5,13 @@ ArrayList <Vehicle> vehicles;
 
 void setup() {
   size(600, 600);
-  flowfield = new FlowField();
-  vehicle = new ArrayList<Vehicle>();
+  flowfield = new FlowField(20);
+  vehicles = new ArrayList<Vehicle>();
   
 }
 
 void draw() {
   background(245);
   
-
+  flowfield.init();
 }
